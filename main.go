@@ -1,6 +1,5 @@
 package main
 
-// https://blog.hashbangbash.com/2014/04/linking-golang-statically/
 /*
 char* foo(void) { return "hello, world! from C"; }
 */
@@ -18,6 +17,7 @@ func main() {
 	fmt.Println(C.GoString(C.foo()))
 }
 
+// info about static linking https://blog.hashbangbash.com/2014/04/linking-golang-statically/
 func createRepo() {
 	contents := map[string]string{
 		"foo/a.txt": "this is file foo/a.txt",
